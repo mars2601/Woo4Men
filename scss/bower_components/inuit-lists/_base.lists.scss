@@ -1,0 +1,36 @@
+/*------------------------------------*\
+    #LISTS
+\*------------------------------------*/
+
+/**
+ * Remove extra vertical spacing when nesting lists.
+ */
+li {
+
+    > ul,
+    > ol {
+        margin-bottom: 0;
+    }
+
+}
+
+.reset-children-style{
+  li{
+    list-style-type: none;
+  }
+  a{
+    color:black;
+    text-decoration:none;
+  }
+}
+
+.reset-style{
+    list-style-type: none;
+    color:black;
+    text-decoration:none;
+}
+
+.reset-marg-padd{
+  margin:0;
+  padding:0;
+}

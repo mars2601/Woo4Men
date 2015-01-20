@@ -1,0 +1,101 @@
+/*------------------------------------*\
+    #NAV-ITEM
+\*------------------------------------*/
+
+.top{
+  @include rem-fix(padding-top, 2.5);
+  @include rem-fix(padding-bottom, 2);
+  &__title{
+    margin:0;
+    padding:0;
+    @include rem-fix(margin-top, -0.5);
+    a{
+      color:$color-3;
+      text-decoration:none;
+      font-family: 'Bitter-Bold';
+      span{
+        color:$color-flash;
+      }
+    }
+
+  }
+  &__nav{
+    @include rem-fix(margin-top, 0.5);
+  }
+  &__item{
+    @include rem-fix(padding, 2);
+    color: $color-3;
+    text-decoration:none;
+    font-family: 'Bitter-Bold';
+
+  }
+}
+header{
+  position:relative;
+}
+.slider{
+  &__image{
+    position:absolute;
+    width:100%;
+    height:100%;
+  }
+  @include rem-fix(height, 10);
+  &__text{
+    position:relative;
+    padding:0;
+    vertical-align:top;
+    &--paragraph{
+      position:absolute;
+      top:0;
+      right:0;
+    text-align:right;
+    float:right;
+    @include rem-fix(padding, 1);
+    @include rem-fix(margin, 0);
+    background-color: $color-flash;
+    font-size:2em;
+    }
+  }
+  &__previous{
+  }
+  &__next{
+
+  }
+  &__control{
+    display:block;
+    width:40px;
+    height:40px;
+    float:right;
+    background-color:white;
+    margin-top: 56px;
+    @include rem-fix(padding, 0.6);
+    text-align:center;
+    &:hover{
+      background-color:$color-3;
+      color:white;
+      cursor:pointer;
+    }
+  }
+}
+
+.cart{
+  border-radius:2px;
+  &--content{
+    display:inline-block;
+    @include rem-fix(padding, 0.5);
+    width:100%;
+    span{
+      @include rem-fix(padding, 0.5);
+      font-size:1.2em;
+    }
+  }
+  &--quantity{
+    display:inline-block;
+    background-color:white;
+    @include rem-fix(padding, 0.5);
+    width:100%;
+    text-align:center;
+    border-radius:0 2px 2px 0;
+
+  }
+}

@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    #NAV
+\*------------------------------------*/
+
+.navigation{
+  background: $black;
+  &__list{
+    &--item{
+      a{
+        text-decoration:none;
+        color:white;
+      }
+    }
+  }
+}

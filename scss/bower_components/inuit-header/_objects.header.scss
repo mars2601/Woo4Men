@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+
+.header{
+  &__container{
+    background: $red-semi-dark;
+    border-bottom: 1px solid $blue;
+  }
+  &__title{
+    text-align:center;
+    font-size:1.5em;
+    margin:0;
+    @include rem-fix(padding-top, 0);
+  }
+  &__link{
+    display:inline-block;
+    color:$white;
+    text-decoration:none;
+    font-size:1em;
+    margin:0;
+    @include rem-fix(padding, 0.8, 0.8, 0.6);
+  }
+  &__border-link{
+    @include rem-fix(padding, 1, 0 , 0.6);
+    text-align:center;
+    font-size:1.3em;
+  }
+  &__border-link:first-child{
+    font-size:1.6em;
+    @include rem-fix(padding, 0.9, 0 , 0.6);
+  }
+}
